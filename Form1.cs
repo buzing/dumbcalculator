@@ -17,15 +17,7 @@ namespace wowdumbcalculator
             InitializeComponent();
         }
 
-        /*
-         * variables:
-         * wished amount of items
-         * current amount of items
-         * remaining items until wished amount
-         * games until wished amount (assuming you get 5 drops)
-         */
-
-        int nWishedAmt, nCurrentAmt, nRemaining, nGamesAmt;
+        int nWishedAmt, nCurrentAmt, nGamesAmt;
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
@@ -42,8 +34,7 @@ namespace wowdumbcalculator
                     MessageBox.Show("wished amount is the same as current amount");
                 } else
                 {
-                    nRemaining = nWishedAmt - nCurrentAmt;
-                    nGamesAmt = nRemaining / 5;
+                    nGamesAmt = (nWishedAmt - nCurrentAmt) / 5;
                     txtGamesAmt.Text = nGamesAmt.ToString();
                 }
             }

@@ -112,6 +112,8 @@ namespace wowdumbcalculator
             this.Controls.Add(this.txtGamesAmt);
             this.Controls.Add(this.txtCurrentAmt);
             this.Controls.Add(this.txtWishedAmt);
+            this.MaximumSize = new System.Drawing.Size(260, 130);
+            this.MinimumSize = new System.Drawing.Size(260, 130);
             this.Name = "Form1";
             this.Text = "Dumb calcualtor";
             this.ResumeLayout(false);
