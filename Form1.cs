@@ -34,7 +34,7 @@ namespace wowdumbcalculator
                     MessageBox.Show("wished amount is the same as current amount");
                 } else
                 {
-                    nGamesAmt = (nWishedAmt - nCurrentAmt) / 5;
+                    nGamesAmt = (nWishedAmt - nCurrentAmt) / 4;
                     txtGamesAmt.Text = nGamesAmt.ToString();
                 }
             }
